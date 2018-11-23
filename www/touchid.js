@@ -25,4 +25,4 @@ ToucID.prototype.move = function(key, packageName,successCallback, errorCallback
 	exec(successCallback, errorCallback, "TouchID", "move", [key,packageName]);
 }
 
-module.exports = ToucID;
+module.exports = new ToucID();
